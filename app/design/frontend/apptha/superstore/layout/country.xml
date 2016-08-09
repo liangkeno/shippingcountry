@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <country_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="country/country" name="countryset" template="country/index.phtml" />
+        </reference>
+        <reference name="before_body_end">
+            <block type="page/html_head" name="scripts_in_footer" template="country/scriptscss.phtml">
+                <action method="addItem"><type>skin_js</type><name>country/country.js</name></action>
+            </block>
+        </reference>
+    </country_index_index>
+
+    <country_index_getcountry>
+        <reference name="root">
+            <block type="country/showcountry" name="root" output="toHtml" template="country/listcountry.phtml" />
+        </reference>
+    </country_index_getcountry>
+
+</layout> 

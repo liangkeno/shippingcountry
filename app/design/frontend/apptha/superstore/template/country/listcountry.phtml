@@ -1,0 +1,16 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2016/5/20
+ * Time: 10:18
+ */
+$id=$this->getRequest()->getParam('id');
+$listArr=$this->getCountry($id);
+$count=count($listArr);
+for($i=0;$i<$count;$i++){
+    ?>
+    <label for="" class="checkbox-inline" id="<?php echo $listArr[$i]['value']; ?>">
+        <input type="checkbox" value="<?php echo $listArr[$i]['label']; ?>"><?php echo $listArr[$i]['label']; ?>
+    </label>
+<?php } ?>

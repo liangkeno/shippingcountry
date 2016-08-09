@@ -1,0 +1,69 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2016/5/20
+ * Time: 11:12
+ */
+
+$listArr=$this->getCountry("A");
+
+
+?>
+
+
+<div class="container clearFix">
+    <div class="shipTop clearFix">
+        <div class="wrapforCreatShip clearFix">
+            <label for="" class="select-inline shipTopLabel">
+                <span class="shipTopTitle">Services</span>
+                <select name="shipMethod" id="shipMethod" >
+                    <option value="free">Free</option>
+                    <option value="standard">Standard</option>
+                    <option value="economical">Economical</option>
+                    <option value="speedy">Speedy</option>
+                </select>
+            </label>
+            <label for="" class="text-inline shipTopLabel">
+                <span class="shipTopTitle">Cost</span>
+                <input type="text" name="shipCost" id="shipCost" disabled>
+            </label>
+            <label for="" class="text-inline shipTopLabel">
+                <span class="shipTopTitle">Each additional</span>
+                <input type="text" name="shipAdditional" id="shipAdditional" disabled>
+            </label>
+        </div>
+
+        <div class="resultforShip clearFix" id="resultforShip">
+
+
+        </div>
+    </div>
+    <div class="shipLeft clearFix">
+        <div class="checkboxNav" id="charCode">
+        </div>
+        <div id="checkboxContent" class="checkboxContent">
+            <?php
+            $count=count($listArr);
+            for($i=0;$i<$count;$i++){
+            ?>
+                <label for="" class="checkbox-inline" id="<?php echo $listArr[$i]['value']; ?>">
+                    <input type="checkbox" value="<?php echo $listArr[$i]['label']; ?>"><?php echo $listArr[$i]['label']; ?>
+                </label>
+            <?php } ?>
+        </div>
+    </div>
+    <div class="shipRight" id="shipRight">
+        <div class="countryWrap" id="countryWrap">
+
+        </div>
+        <div class="countryBottom">
+            <button id="showData" class="button ">Save ship info</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+

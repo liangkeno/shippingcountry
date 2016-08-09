@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Country</name>
+    <version>0.1.2</version>
+    <stability>stable</stability>
+    <license>OSL V3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>shipping for yokir.com</summary>
+    <description>shipping for yokir.com</description>
+    <notes>fixed minor bugs</notes>
+    <authors><author><name>liang paiker</name><user>parker</user><email>ParkerLiang23@gmail.com</email></author></authors>
+    <date>2016-06-14</date>
+    <time>08:16:39</time>
+    <contents><target name="magelocal"><dir name="Apptha"><dir name="Country"><dir name="Block"><file name="Country.php" hash="5318cbcdf6e00d8332e2d6e9352e1c25"/><file name="Showcountry.php" hash="ba7aad0284899752820d20ed2aaf417a"/></dir><dir name="Controllers"><file name="indexController.php" hash="d74439732d58881af8d38a256c66f7fd"/></dir><dir name="Model"><file name="Country.php" hash="0e60999eebcfc441da97138cea67affe"/><dir name="Mysql4"><dir name="Country"><file name="Collection.php" hash="a4b39e982162e10fd14e6a62d6b141ae"/></dir><file name="Country.php" hash="3ec6656672bbe08ee62584eaf3660d4c"/></dir></dir><dir name="etc"><file name="config.xml" hash="73c82488188b4e0ee96e9869ec41a6e2"/></dir><dir name="sql"><dir name="country_setup"><file name="mysql4-install-0.1.0.php" hash="06f5c7bf6050cd74d9aaf0d7c276290c"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apptha_Country.xml" hash="11b9c475b7f803aca6f27205cc4936cd"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="apptha"><dir name="superstore"><dir name="layout"><file name="country.xml" hash="7a199ecc674f6d52f145339d96ab7c51"/></dir><dir name="template"><dir name="country"><file name="index.phtml" hash="da8991003298a0c24f2a2a3e3a99e035"/><file name="listcountry.phtml" hash="f6b559bc2ab68fae93dddafaa22f05da"/><file name="scriptscss.phtml" hash="fbdeac4f88cdf650a7eba63efbb7a046"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="apptha"><dir name="superstore"><dir name="country"><file name="country.css" hash="3b502661760cb04449253dabe8c48565"/><file name="country.js" hash="da1d38c73a78e3f8f6d8ee839a338ced"/><file name="countryfirstVersion.js" hash="c20d576cb7274529360f4d5a4bb0a169"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
